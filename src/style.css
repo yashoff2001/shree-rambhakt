@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display&display=swap');
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
+
+.marblesPage-mainSection{
+    background: #A98B2C;
+    background: linear-gradient(90deg,rgba(169, 139, 44, 1) 20%, rgba(0, 0, 0, 1) 100%);
+}
