@@ -1,0 +1,15 @@
+# Netlify Configuration File
+
+[build]
+  # Change this if your build folder is different
+  publish = "build"   # React = build, Vite = dist, Next.js export = out
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
