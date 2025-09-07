@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "lint": "eslint .",
     "tailwind-init": "tailwindcss init",
     "start": "react-scripts start",
     "start:ngrok": "ngrok http 5173"

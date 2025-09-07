@@ -1,8 +1,8 @@
 # Netlify Configuration File
 
 [build]
-  # Change this if your build folder is different
-  publish = "build"   # React = build, Vite = dist, Next.js export = out
+  command = "npm run build"
+  publish = "dist"
 
 [[headers]]
   for = "/*"
