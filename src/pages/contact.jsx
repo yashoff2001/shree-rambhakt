@@ -6,12 +6,12 @@ const Contact = () => {
     return (
         <>
             {/* Main Section */}
-            <div className="md:h-auto" style={{ backgroundImage: `url(${ContactPageImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div style={{ backgroundImage: `url(${ContactPageImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="bg-slate-800/85">
                     <div className="container mx-auto">
-                        <div className="pt-40 pb-20 px-5">
-                            <div className="flex flex-col text-center items-center">
-                                <h2 className="p-2 text-5xl font-semibold text-white mb-6">Get in Touch</h2>
+                        <div className="h-[550px] md:h-[595px] px-5 flex items-center justify-center">
+                            <div className="text-center">
+                                <h2 className="p-2 text-5xl font-semibold text-white mb-3">Get in Touch</h2>
                                 <p className="text-gray-300/70 mb-6">We're here to answer any questions you may have about our businesses and services.</p>
                             </div>
                         </div>
@@ -22,9 +22,9 @@ const Contact = () => {
             {/* Contact Section */}
             <div className="container mx-auto">
 
-                <div className="pt-40 pb-15 px-5">
+                <div className="py-20 px-5">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
 
                         {/* Contact Form */}
                         <ContactForm />

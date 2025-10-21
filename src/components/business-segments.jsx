@@ -65,7 +65,7 @@ function BusinessSegments() {
                 <p className="text-slate-400 lg:w-2/5">Shree Rambhakt Group has established itself as a leader in various sectors, each with its own unique approach to quality and service.</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
+            <div className="flex flex-col lg:flex-row gap-5 justify-between">
 
                 {/* Tabs Section Mobile */}
                 <div className="flex lg:hidden border border-gray-300 rounded-xl overflow-scroll w-[100%]">

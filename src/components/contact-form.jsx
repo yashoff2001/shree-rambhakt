@@ -76,36 +76,36 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="rounded-2xl p-7 shadow-2xl h-[fit-content]" id='menuSection'>
+        <div className="h-[fit-content]" id='menuSection'>
             <p className="text-2xl mb-5 text-slate-800">Send Us a Message</p>
-            <form ref={form} onSubmit={sendEmail} className="space-y-7">
+            <form ref={form} onSubmit={sendEmail} className="h-[fit-content] p-7 space-y-7 rounded-2xl shadow-lg border-1 border-gray-200">
 
-                <div className="flex flex-col md:flex-row gap-7">
+                <div className="flex flex-col md:flex-row justify-between gap-5">
 
                     {/* Name */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 w-[100%]">
                         <label htmlFor="name">Full Name</label>
                         <input  type="text" name="name" placeholder="Your full Name" value={formData.name} onChange={handleChange} className="border-2 border-zinc-200 p-2 rounded-md focus:border-slate-800 outline-0" required />
                     </div>
                     
                     {/* Email */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 w-[100%]">
                         <label htmlFor="email">Email</label>
                         <input  type="text" name="email" placeholder="your.email@example.com" value={formData.email} onChange={handleChange} className="border-2 border-zinc-200 p-2 focus:border-slate-800 rounded-md outline-0" required />
                     </div>
 
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-7">
+                <div className="flex flex-col md:flex-row justify-between gap-5">
                 
                     {/* Phone Number */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 w-[100%]F">
                         <label htmlFor="phoneNumber">Phone Number</label>
                         <input  type="text" name="phoneNumber" placeholder="Enter Your Number" value={formData.phoneNumber} onChange={handleChange} className="border-2 border-zinc-200 p-2 focus:border-slate-800 rounded-md outline-0" required />
                     </div>
                     
                     {/* Subject */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 w-[100%]F">
                         <label htmlFor="subject">Subject</label>
                         <select name="subject" value={formData.subject} onChange={handleChange} className="border-2 border-zinc-200 focus:border-slate-800 p-2 rounded-md outline-0 backdrop-blur-md" required>
                             <option value="">Select a Subject</option>
