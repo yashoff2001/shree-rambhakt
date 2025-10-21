@@ -16,8 +16,7 @@ function HeroSection() {
             <div className="flex flex-col justify-center items-center md:h-[100vh] text-center">
               <p className="p-2 rounded-full w-[fit-content] text-orange-500">Excellence in Multiple Domains</p>
               <h1 className="font-mono text-white text-[3rem] sm:text-[4rem] leading-none mb-6">Building a Legacy of <span className="text-orange-500">Excellence </span> and <span className="text-orange-500">Trust</span></h1>
-              <h2 className="text-gray-300 text-2xl mb-6">Shree Rambhakt Group stands for quality and innovation across Marbles, Hospitality, Real Estate, and Education sectors.</h2>
-              {/* <a href="/contact"><button className="text-xl bg-slate-700 text-white px-4 py-2 rounded-md hover:scale-110 hover:text-orange-500 backdrop-filter hover:bg-gray-200/10 duration-500 cursor-pointer">Contact Us</button></a> */}
+              <h2 className="text-gray-300 text-2xl mb-6">"Shree Rambhakt Group stands for quality and innovation across Marbles, Hospitality, Real Estate, Education, Real State, Food and Beverages, Mining, Trading, Institutions, and NGOs."</h2>
               <GetInTouchButton />
             </div>
           </div>

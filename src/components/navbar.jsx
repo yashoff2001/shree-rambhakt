@@ -57,13 +57,13 @@ const NavBar = () => {
                     </div>
 
                     {/* Mobile Menu Icon */}
-                    <button className="lg:hidden hover:cursor-pointer text-white text-3xl z-50" onClick={handleClick}><CiMenuFries /></button>
+                    <button className="lg:hidden hover:cursor-pointer text-white text-3xl z-50" onClick={handleClick} aria-label="Open Menu"><CiMenuFries /></button>
                 </div>
             </div>
 
             {/* Backdrop */}
             {click && (
-                <div onClick={closeMenu} className="fixed inset-0 bg-black/40 z-40"></div>
+                <div onClick={closeMenu} className="fixed inset-0 bg-black/40 z-40" aria-label="Close Menu"></div>
             )}
 
             {/* Offcanvas Sidebar */}

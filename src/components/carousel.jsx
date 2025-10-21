@@ -60,7 +60,6 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  // Touch event handlers
   const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
@@ -73,8 +72,8 @@ const Carousel = () => {
     if (!touchStartX || !touchEndX) return;
     const distance = touchStartX - touchEndX;
 
-    if (distance > 50) goToNext();      // swipe left
-    if (distance < -50) goToPrev();     // swipe right
+    if (distance > 50) goToNext();
+    if (distance < -50) goToPrev();
 
     setTouchStartX(null);
     setTouchEndX(null);
@@ -89,7 +88,7 @@ const Carousel = () => {
           <div key={slide.id} className="min-w-full p-8 md:p-20 space-y-8">
               <p className='text-white text-center text-2xl italic'>{slide.description}</p>
               <div className="flex gap-5 items-center">
-                  <img src={slide.image} alt={slide.title} className="rounded-full h-[70px]" />
+                  <img src={slide.image} alt={slide.userType} className="rounded-full h-[70px]" />
                   <div className="flex flex-col">
                     <p className='text-white'>{slide.name}</p>
                     <p className='text-gray-500'>{slide.userType}</p>
@@ -108,7 +107,7 @@ const Carousel = () => {
       {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {slides.map((_, index) => (
-            <button key={index} onClick={() => goToSlide(index)} className={`w-3 h-3 duration-400 rounded-full hover:cursor-pointer ${ currentIndex === index ? 'bg-orange-500 w-[20px]' : 'bg-gray-400' }`}></button>
+            <button key={index} onClick={() => goToSlide(index)} className={`w-3 h-2 duration-400 rounded-full hover:cursor-pointer ${ currentIndex === index ? 'bg-orange-500 w-[20px]' : 'bg-gray-400' }`}></button>
           ))}
       </div>
     </div>

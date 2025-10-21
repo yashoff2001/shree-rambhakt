@@ -11,11 +11,11 @@ const NGO = () => {
     return(
         <>
             <div className="md:h-auto" style={{ backgroundImage: `url(${marblesBgDesktop})`, backgroundSize: 'cover ', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                <div className="bg-green-500/40">
+                <div className="bg-green-500/30">
                     <div className="container mx-auto">
-                        <div className="pt-30 pb-20 px-5">
-                            {/* About Us Main Section */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-13">
+                        <div className="pt-29 pb-19 px-5">
+                            {/* NGO Main Section */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 md:py-10">
                                 <div className="flex flex-col justify-center">
                                     <p className="px-4 py-2 rounded-full w-[fit-content] bg-green-100/70 text-green-700">Education For All</p>
                                     <h2 className="text-3xl sm:text-5xl font-semibold text-white mb-4">Empowering Lives Through Education</h2>

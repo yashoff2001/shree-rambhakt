@@ -41,7 +41,7 @@ function RestaurantPage() {
         <div className="container mx-auto">
           <div className="pt-30 pb-20 px-5">
             {/* Restaurant Main Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:py-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 md:py-10">
               <div className="flex flex-col justify-center">
                 <p className="px-4 py-2 rounded-full w-[fit-content] bg-gray-200/20 text-white">Fine Dining Experience</p>
                 <h2 className="p-2 text-3xl sm:text-5xl font-semibold text-white mb-6">A Culinary Journey to Remember</h2>
