@@ -14,10 +14,10 @@ const Volunteer = () => {
 
                     <form action="" className="flex flex-col gap-6">
                         <div className="flex gap-6 w-full">
-                            <input type="text" placeholder="Name" className=" w-full border border-green-300 py-3 px-5 rounded-md" />
-                            <input type="text" placeholder="Phone Number" className=" w-full border border-green-300 py-3 px-5 rounded-md" />
+                            <input type="text" placeholder="Name" className=" w-full outline-none focus:outline-none border border-green-300 py-3 px-5 rounded-md" />
+                            <input type="number" placeholder="Phone Number" className=" w-full outline-none focus:outline-none border border-green-300 py-3 px-5 rounded-md" />
                         </div>
-                        <input type="text" placeholder="Email Address" className="border border-green-300 py-3 px-5 rounded-md" />
+                        <input type="text" placeholder="Email Address" className="border border-green-300 outline-none focus:outline-none py-3 px-5 rounded-md" />
                         <button className="bg-orange-500 rounded-md py-3 hover:bg-orange-400 duration-200">Register as Volunteer</button>
                     </form>
                 </div>
